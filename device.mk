@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Inherit from msm8916-common
-$(call inherit-product, device/motorola/msm8916-common/msm8916.mk)
+$(call inherit-product, device/SGP/msm8916-common/msm8916.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
 # Screen density
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # System Properties
-$(call inherit-product, device/motorola/merlin/system_prop.mk)
+$(call inherit-product, device/SGP/BP2/system_prop.mk)
 
 # Sensors
 PRODUCT_PACKAGES += \

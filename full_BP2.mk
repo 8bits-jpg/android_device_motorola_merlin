@@ -12,11 +12,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-ifneq ($(filter BP2,$(TARGET_DEVICE)),)
+# Inherit from merlin device
+$(call inherit-product, device/SGP/BP2/device.mk)
 
-LOCAL_PATH := $(call my-dir)
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := BP2
+PRODUCT_NAME := full_BP2
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+$(call inherit-product-if-exists, vendor/motorola/merlin/merlin-vendor.mk)

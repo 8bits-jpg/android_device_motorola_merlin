@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_merlin.mk
+    $(LOCAL_DIR)/lineage_BP2.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_merlin-userdebug
+    lineage_BP2-userdebug

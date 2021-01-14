@@ -9,8 +9,8 @@
 set -e
 
 # Required!
-export DEVICE=merlin
+export DEVICE=BP2
 export DEVICE_COMMON=msm8916-common
-export VENDOR=motorola
+export VENDOR=SGP
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

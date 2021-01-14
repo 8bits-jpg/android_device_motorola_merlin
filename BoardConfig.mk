@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/motorola/msm8916-common/BoardConfigCommon.mk
+include device/SGP/msm8916-common/BoardConfigCommon.mk
 
--include vendor/motorola/merlin/BoardConfigVendor.mk
+-include vendor/SGP/BP2/BoardConfigVendor.mk #NOT SURE IF "BP2"
 
-DEVICE_PATH := device/motorola/merlin
+DEVICE_PATH := device/SGP/BP2
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := merlin
+TARGET_OTA_ASSERT_DEVICE := BP2
 
 # Camera
 BOARD_GLOBAL_CFLAGS += -DCONFIG_MSM_USES_M_STACK
@@ -31,7 +31,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/bin/mm-qcamera-daemon=23
 
 # Kernel
-TARGET_KERNEL_CONFIG := merlin_defconfig
+TARGET_KERNEL_CONFIG := BP2_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216	# 16384 * 1024 mmcblk0p31
